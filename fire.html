@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body>
+    <canvas id="gl-canvas"></canvas>
+    <script src="./js/lib/gl-matrix.min.js"></script>
+    <script src="./js/lib/program.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/base.js"></script>
+    <script type="application/javascript">
+        class GLApp extends GLBase {
+            constructor(canvas) {
+                super(canvas);
+            }
+            start() {
+                
+            }
+            update() {
+
+            }
+        }
+        new GLApp(document.getElementById('gl-canvas'))
+    </script>
+</body>
+</html>
