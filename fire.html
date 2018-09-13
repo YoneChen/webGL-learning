@@ -11,17 +11,20 @@
         margin: 0;
         padding: 0;
     }
+    html,body,#app {
+        height: 100%;
+    }
 </style>
 <body>
-    <canvas id="gl-canvas"></canvas>
+    <section id="app"></section>
     <script src="./js/lib/gl-matrix.min.js"></script>
     <script src="./js/lib/program.js"></script>
     <script src="./js/utils.js"></script>
     <script src="./js/base.js"></script>
     <script type="application/javascript">
         class GLApp extends GLBase {
-            constructor(canvas) {
-                super(canvas);
+            constructor(container) {
+                super(container);
             }
             start() {
                 
@@ -30,7 +33,7 @@
 
             }
         }
-        new GLApp(document.getElementById('gl-canvas'))
+        new GLApp(document.getElementById('app'))
     </script>
 </body>
 </html>
